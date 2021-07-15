@@ -10,12 +10,12 @@ async def new_join_f(client, message):
     chat_type = message.chat.type
     if chat_type != "private":
         await message.reply_text(
-            f"""<b>🙋🏻‍♂️ Hello dear!\n\n Welcome to Leech Group</b>\n\n<b>Current CHAT ID: <code>{message.chat.id}</code>""",
+            f"""<b> Hello dear!""",
             parse_mode="html",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('Channel', url='https://t.me/MaxxBots')
+                        InlineKeyboardButton('Channel', text='لطفا فعال باشید')
                     ]
                 ]
                )
