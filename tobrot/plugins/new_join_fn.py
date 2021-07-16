@@ -12,13 +12,6 @@ async def new_join_f(client, message):
         await message.reply_text(
             f"""<b> Hello dear!""",
             parse_mode="html",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton('Channel', text='لطفا فعال باشید')
-                    ]
-                ]
-               )
             )
         # leave chat
         await client.leave_chat(chat_id=message.chat.id, delete=True)
